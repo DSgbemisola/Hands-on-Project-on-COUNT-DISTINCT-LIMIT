@@ -1,5 +1,5 @@
 # Hands-on-Project-on-COUNT-DISTINCT-LIMIT
-This is an hands-on project to demostrate skills on writing COUNT, DISTINCT AND LIMIT expressions with SELECT statements. 
+This is a hands-on project to demostrate skills on writing COUNT, DISTINCT AND LIMIT expressions with SELECT statements. 
 
 # Objectives
 The objective this project are to:
@@ -123,7 +123,71 @@ Solution: I retrieved the number of release years of the films distinctly, produ
         WHERE productioncompany = 'Warner Bros. Pictures';
 ![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/42c815f2-155c-4279-b22a-ce7d402693a1)
 
-# Task 8: 
+# Task 8: Retrieve the name of all unique films released in the 21st century and onwards, along with their release years.
+
+Solution: I retrieved the name of all unique films released in the 21st century and onwards, along with their release years using the SQL statement below:
+        SELECT DISTINCT title as film_title, releaseyear as year_of_release
+        FROM filmlocations
+        WHERE releaseyear >= 2001;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/e5ac83fb-c03c-4561-8651-b39302d8a3e2)
+
+# Task 10: Retrieve the names of all the directors and their distinct films shot at City Hall.
+
+Solution: I retrieve the names of all the directors and their distinct films shot at City Hall using the SQL statement below:
+        SELECT title as film_title, DISTINCT director as director_name
+        FROM filmlocations
+        WHERE locations = 'City Hall';
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/25ea7a81-4e26-4962-8ead-33f3ef4db756)
+
+# Task 9: Retrieve the number of distributors distinctly who distributed films acted by Clint Eastwood as 1st actor.
+
+Solution: I retrieved the number of distinct distributors who distributed films acted by Clint Eastwood as 1st actor using the SQL statement below:
+        SELECT COUNT(DISTINCT distributor) as number_of_distinct_distributor
+        FROM filmlocations
+        WHERE actor1 = 'Clint Eastwood';
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/7415b766-7852-4e75-bdd9-e93928822829)
+
+# Task 10: Retrieve the first 25 rows from the “FilmLocations” table.
+Solution: I retrieved the first 25 rows from the “FilmLocations” table using the SQL statement below:
+        SELECT *
+        FROM filmlocations
+        LIMIT 25;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/db892cca-0617-4964-ad27-49ea4f743881)
+
+# Task 11: Retrieve the first 15 rows from the “FilmLocations” table starting from row 11.
+
+Solution: I retrieved the first 15 rows from the “FilmLocations” table starting from row 11 using the SQL statement below:
+        SELECT *
+        FROM filmlocations
+        LIMIT 15 OFFSET 10;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/aa29242c-e0f8-4580-9954-162a31e3737f)
+
+# Task 12: Retrieve the name of first 50 films distinctly.
+
+Solution: I retrieved the name of distinct first 50 films using the SQL statement below:
+        SELECT DISTINCT title as film_title
+        FROM filmlocations
+        LIMIT 50;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/edf57bf8-6fb9-43c5-a1af-3e27dbcc5596)
+
+# Task 13: Retrieve first 10 film names distinctly released in 2015.
+
+Solution: I retrieved first 10 film names distinctly released in 2015 using the SQL statement below:
+        SELECT DISTINCT title as film_title
+        FROM filmlocations
+        WHERE releaseyear = 2015
+        LIMIT 10;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/5fa40289-4726-4a7b-859e-08ecf8fe510f)
+
+# Task 14: Retrieve the next 3 film names distinctly after first 5 films released in 2015.
+
+Solution: I retrieved first 10  distinct film names released in 2015 using the SQL statement below:
+        SELECT DISTINCT title as film_title
+        FROM filmlocations
+        WHERE releaseyear = 2015
+        LIMIT 3 OFFSET 5;
+![image](https://github.com/DSgbemisola/Hands-on-Project-on-COUNT-DISTINCT-LIMIT/assets/116846702/32b5cb83-a217-4407-8b1e-7290aeda19f6)
+
 
 
 
