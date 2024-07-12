@@ -1,6 +1,6 @@
-# Hands-on-Project-on-COUNT-DISTINCT-LIMIT
+# Hands-on project on using COUNT-DISTINCT-LIMIT Expressions in SQL
 
-This is a hands-on project to demostrate skills on writing COUNT, DISTINCT AND LIMIT expressions with SELECT statements. 
+This is a hands-on project to demostrate skills in writing COUNT, DISTINCT AND LIMIT expressions with SELECT statements. 
 
 # Objectives
 
