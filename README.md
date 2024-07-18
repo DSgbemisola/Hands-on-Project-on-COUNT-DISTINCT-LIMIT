@@ -25,7 +25,7 @@ In this project, I used PgAdmin 4 (PostgreSQL 15)
 # Database Used in this Lab
 
 The database used in this project comes from the following dataset source: Film Locations in San Francisco under a PDDL: Public Domain Dedication and License.
-Dataset id downloadable here: https://drive.google.com/file/d/1xzX-gZTRZBT3XHwSJ1L34DbnszwQzdxC/view?usp=sharing
+Dataset is downloadable here: https://drive.google.com/file/d/1xzX-gZTRZBT3XHwSJ1L34DbnszwQzdxC/view?usp=sharing
 
 # Project Phases
 
@@ -58,7 +58,7 @@ The first phase of the project involved creating our SanFranciscoFilmLocations D
 5. Added columns to your table:
    a. Clicked the "+" button to add a new column.
    b. For each column, I entered the name and selected the data type (e.g., VARCHAR, INTEGER)
-   b. Repeated for all columns as defined below:
+   c. Repeated for all columns as defined below:
 
 ![image](https://github.com/DSgbemisola/Hands-on-Lab-Basics-of-SQL-SELECT-Statement/assets/116846702/23551016-34a7-40d7-b53b-eb3096b7f7e9)
 
